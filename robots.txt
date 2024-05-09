@@ -1,0 +1,6 @@
+#envirocare robots.txt
+
+User-agent: *
+Allow: / 
+Sitemap: https://www.envirocarefoundation.com/sitemap.html
+Sitemap: https://www.envirocarefoundation.com/sitemap.xml

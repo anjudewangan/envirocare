@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Envirocare Foundation is a dynamic initiative led by four young, nature-loving
+    green ambassadors who are determined to inspire a global movement for sustainable
+    living." />
+  <meta name="keywords"
+    content="Envirocare, Envirocare Foundation, Envirocare Delhi, Envirocare India, Sustainable Behaviour, Behavioral Changes, Sustainable Future. E-Waste Management, Keep Track of Your Carbon Footprints, Cognitive Behavior Analysis" />
+  <meta property="og:image" content="./assets/images/logo/logo.png" />
+  <meta property="og:title" content="Envirocare Foundation | Enviro Honors" />
+  <meta property="og:description" content="Envirocare Foundation is a dynamic initiative led by four young, nature-loving green ambassadors who are determined to inspire a global movement for sustainable
+    living." />
+  <meta property="og:url" content="https://www.envirocarefoundation.com/enviro-honors.html" />
+  <meta property="og:site_name" content="Envirocare Foundation | Enviro Intro" />
+  <meta property="og:type" content="website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Envirocare Foundation | Enviro Honors</title>
+
+  <!-- CSS FILES -->
+  <link rel="shortcut icon" href="./assets/images/logo/logo.png" type="image/x-icon" />
+  <link rel="canonical" href="https://www.envirocarefoundation.com/enviro-intro.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <link href="./assets/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+<style>
+  .courses-container .card {
+    width: 300px;
+    background: #fff;
+    font-family: "Roboto", sans-serif;
+    padding: 16px;
+    box-shadow: 0 9px 17px -6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 400ms ease;
+  }
+
+  .courses-container .card:hover {
+    transform: scale(1.03);
+  }
+
+  .courses-container,
+  .courses-container * {
+    box-sizing: border-box;
+  }
+
+  .courses-container .card a {
+    text-decoration: none;
+    color: #14213d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .desc-img {
+    height: 3rem !important;
+    /* padding: 0 9px; */
+    width: 7rem !important;
+    object-fit: contain !important;
+    background-color: white;
+    opacity: 1;
+  }
+
+  .courses-container .card img {
+    margin: -16px;
+    object-fit: cover;
+    height: 9rem;
+  }
+
+  .courses-container .card .category {
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    background: #14213d;
+    color: #fff;
+    padding: 2px 7px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 30px;
+  }
+
+  .courses-container .card h2 {
+    font-size: 18px;
+    margin: 22px 0 -20px 0;
+    font-weight: 540;
+  }
+
+  .title {
+    height: 5rem;
+    width: auto;
+  }
+
+  .description2 {
+    font-size: 14px;
+    margin-top: -3px;
+    width: 17rem;
+    text-align: start;
+  }
+
+  .courses-container .card .description {
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .courses-container .card .info {
+    display: none;
+    justify-content: space-between;
+    background: #edf6f9;
+    margin: -16px;
+    margin-top: 20px;
+    padding: 12px 16px;
+    align-items: center;
+  }
+
+  .courses-container .card .info .price {
+    font-size: 28px;
+    font-weight: 900;
+    color: #df0688;
+  }
+
+  .courses-container .card .info .price::before {
+    content: "$";
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .courses-container .card .info .duration {
+    display: flex;
+  }
+
+  .courses-container .card .info .time-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .courses-container .card .info .duration::after {
+    content: "Hrs";
+    margin-left: 4px;
+  }
+
+  .courses-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+
+  @media (max-width: 850px) {
+    .courses-container {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .courses-container .card {
+      width: 100%;
+    }
+
+    .courses-container .card img {
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .courses-container {
+      grid-template-columns: 1fr;
+      max-width: 320px;
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: 80%;
+    width: 80%;
+    border: 10px solid #000000;
+    box-shadow: 0 -7px 17px 9px rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: rgba(15, 15, 15, 0.333);
+    font-family: monospace;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+
+  .mySwiper {
+    height: 15%;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    border: 5px solid black;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<body>
+  <div id="preloader"></div>
+  <div id="tap-top"></div>
+  <main>
+    <nav class="navbar navbar-expand-lg" id="navbar navbar-expand-lg" style="z-index: 999"></nav>
+  </main>
+  <div class="container" id="colorlib-blog">
+    <div class="row text-center">
+      <h2 class="bold">Enviro Honors</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+        <h2>Enviro Honors</h2>
+      </div>
+    </div>
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/images/rewards/hrishit.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/rewards/bhavya.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/rewards/yashraj.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/rewards/aadya.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/rewards/5.jpeg" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div thumbsSlider="" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/images/rewards/hrishit.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/rewards/bhavya.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/rewards/yashraj.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/rewards/aadya.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/rewards/5.jpeg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="colorlib-blog">
+    <div class="row text-center">
+      <h2 class="bold">Enviro Media</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+        <h2>Enviro Media</h2>
+      </div>
+    </div>
+  </div>
+  <div class="courses-container"></div>
+  <nav class="social" id="social"></nav>
+  <footer class="site-footer section-padding footer-bg-color" id="footer"></footer>
+  <script src="main.js"></script>
+</body>
+
+<!-- JAVASCRIPT FILES -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"
+  integrity="sha512-SFaNb3xC08k/Wf6CRM1J+O/vv4YWyrPBSdy0o+1nqKzf+uLrIBnaeo8aYoAAOd31nMNHwX8zwVwTMbbCJjA8Kg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="./assets/js/jquery.sticky.js"></script>
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/nav-foot-side.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  const courses = [
+    {
+      url: "https://sustainabilityzero.com/fast-fashion-slow-torture/",
+      title: "Fast Fashion-Slow Torture, Is the youth really reckless",
+      category: "02/03/2023",
+      thumbnail: "./assets/images/rewards/Victoria.webp",
+      description: "./assets/images/rewards/1.jpeg",
+      description2:
+        "Fast fashion brands entail mass-market retailers who create products in large ...",
+    },
+
+    {
+      url: "https://www.thehansindia.com/hans/education-careers/world-environment-day-harnessing-youth-power-energy-conservation-as-a-catalyst-for-global-environmental-transformation-800936",
+      title: " World Environment Day: Harnessing youth power ",
+      category: "05/06/2023",
+      thumbnail: "./assets/images/rewards/1355152-world-environment-day.webp",
+      description: "./assets/images/rewards/2.png",
+      description2:
+        "In our fast-paced lives, it's easy to overlook the profound impact our energy   ...",
+    },
+
+    {
+      url: "https://www.aepcindia.com/apparel-magazine/june-2023",
+      title: "Fast Fashion- Slow Torture, Brands entail mass-market",
+      category: "13/06/2023",
+      thumbnail: "./assets/images/rewards/43994-0.jpg",
+      description: "./assets/images/rewards/11.webp",
+      description2:
+        "Is the youth really reckless when it comes to how fashion affescts the world ...",
+    },
+    {
+      url: "https://indianexpress.com/article/lifestyle/health/delhi-govt-imposes-ban-firecrackers-air-pollution-health-risks-8938273/",
+      title: "Delhi govt imposes ban on firecrackers",
+      category: "18/09/2023",
+      thumbnail: "./assets/images/rewards/crackers-2.jpeg",
+      description: "./assets/images/rewards/The_Indian_Express_logo.svg.png",
+      description2:
+        "The Delhi government announced a ban on the manufacturing, sale, storage, and...",
+    },
+    {
+      url: "https://indianexpress.com/article/lifestyle/health/delhi-ban-green-crackers-sustainable-alternative-health-risks-8943585/",
+      title:
+        "Are green crackers a better alternative to traditional fireworks",
+      category: "22/09/2023",
+      thumbnail: "./assets/images/rewards/crackers.jpeg",
+      description: "./assets/images/rewards/The_Indian_Express_logo.svg.png",
+      description2:
+        "Last week, the Supreme Court asked the Delhi Police to ensure a complete ban ...",
+    },
+
+    {
+      url: "https://scoonews.com/news/sustainable-practices-in-educational-institutions-world-environmental-health-day-2023/",
+      title: " Sustainable Practices in Educational Institutions",
+      category: "26/09/2023",
+      thumbnail:
+        "./assets/images/rewards/small-girl-with-dirty-hands.jpg",
+      description: "./assets/images/rewards/4.png",
+      description2:
+        "World Environmental Health Day 2023 brings with it a poignant reminder of our ...",
+    },
+
+    {
+      url: "https://indiaeducationdiary.in/school-students-in-indirapuram-drive-an-inspiring-plastic-collection-campaign/",
+      title: "School Students In Indirapuram Drive An Inspiring ",
+      category: "22/09/2023",
+      thumbnail: "./assets/images/rewards/school-drive.jpg",
+      description: "./assets/images/rewards/5.png",
+      description2:
+        "Ghaziabad – An inspiring environmental initiative led by the school students ...",
+    },
+    {
+      url: "https://epaper.navbharattimes.com/Ghaziabad%20Times%3Cbr%3EMasala%20mix/2023-10-6/26/page-1.html",
+      title: "बच्चों की टोली ने इकट्ठा किया 80 किलो प्लास्टिक वेस्ट ",
+      category: "06/10/2023",
+      thumbnail: "./assets/images/rewards/Plastic-camp.jpeg",
+      description: "./assets/images/rewards/6.png",
+      description2:
+        "अपने पर्यावरण को संवारने के लिए जब बच्चे भी जुट जाएं तो वह दिन दूर नहीं जब व्हम साफ सुथरी ...",
+    },
+    {
+      url: "https://highereducationplus.com/youth-champions-for-a-greener-future-harnessing-youth-engagement-for-net-zero-transformation/",
+      title: "Youth Champions for a Greener Future: Harnessing",
+      category: "20/11/2023",
+      thumbnail: "./assets/images/rewards/ssdff-750x375.jpg",
+      description: "./assets/images/rewards/7.png",
+      description2:
+        "Achieving a net-zero future requires a behavioural change in the way we live, ...",
+    },
+    {
+      url: "https://epaper.navbharattimes.com/Ghaziabad%20Times%3Cbr%3EMasala%20mix/2023-11-26/26/page-9.html",
+      title: "स्टूडेंट्स ने प्रदूषण के खिलाफ खोला मोर्चा",
+      category: "26/11/2023",
+      thumbnail: "./assets/images/rewards/Plastic-camp2.jpeg",
+      description: "./assets/images/rewards/6.png",
+      description2:
+        "प्रस, इंदिरापुरम : प्रदूषण के खिलाफ शहर में युवा अपने-अपने स्तर पर काम कर रहे हैं ...",
+    },
+    {
+      url: "https://www.youthkiawaaz.com/2023/11/kids-lead-charge-against-plastic-pollution/amp/",
+      title: "Children Lead Charge Against ‘Plastic Pollution’ ",
+      category: "30/11/2023",
+      thumbnail:
+        "./assets/images/rewards/Jaya-Prayas-Help.jpeg",
+      description: "./assets/images/rewards/9.png",
+      description2:
+        "In a resounding display of youth-driven environmental activism, a spirited group ...",
+    },
+  ];
+
+  const coursesContainer = document.querySelector(".courses-container");
+
+  const displayCourse = (
+    urlValue,
+    titleValue,
+    categoryValue,
+    thumbnailValue,
+    descriptionValue,
+    description2Value,
+    priceValue,
+    durationValue
+  ) => {
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    const a = document.createElement("a");
+    a.setAttribute("href", urlValue);
+    a.setAttribute("target", "_blank");
+
+    const category = document.createElement("div");
+    category.classList.add("category");
+    category.innerHTML = categoryValue;
+
+    const img = document.createElement("img");
+    img.setAttribute("src", thumbnailValue);
+
+    const description = document.createElement("img");
+    description.setAttribute("src", descriptionValue);
+    description.classList.add("desc-img");
+
+    const description2 = document.createElement("div");
+    description2.classList.add("description2");
+    description2.innerHTML = description2Value;
+
+    const title = document.createElement("h2");
+    title.classList.add("title");
+    title.innerHTML = titleValue;
+
+    const info = document.createElement("div");
+    info.classList.add("info");
+
+    const price = document.createElement("div");
+
+    const duration = document.createElement("div");
+    duration.classList.add("duration");
+
+    const timeIcon = document.createElement("div");
+
+    timeIcon.innerHTML = `<svg
+  xmlns="http://www.w3.org/2000/svg"
+  class="h-5 w-5"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+>
+  <path
+    fill-rule="evenodd"
+    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+    clip-rule="evenodd"
+  />
+</svg>`;
+
+    const value = document.createElement("div");
+    value.classList.add("value");
+    value.innerHTML = durationValue;
+
+    //   Appending Elements
+
+    coursesContainer.appendChild(card);
+    card.appendChild(a);
+    a.appendChild(category);
+    a.appendChild(img);
+    a.appendChild(description, img);
+    a.appendChild(title);
+    a.appendChild(info);
+    a.appendChild(description2);
+    info.appendChild(price);
+    info.appendChild(duration);
+    duration.appendChild(timeIcon);
+    duration.appendChild(value);
+  };
+
+  const generateCourseData = () => {
+    courses.forEach((c) => {
+      displayCourse(
+        c.url,
+        c.title,
+        c.category,
+        c.thumbnail,
+        c.description,
+        c.description2,
+        c.price,
+        c.duration
+      );
+    });
+  };
+
+  generateCourseData();
+</script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</html>
